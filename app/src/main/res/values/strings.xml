@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">懵圈</string>
+    <string name="$dot">•</string>
+    <string name="$slash">/</string>
+    <string name="no_reply">暂无回复</string>
+    <string name="create_topic_content_hint">说点什么吧&#8230;</string>
+</resources>

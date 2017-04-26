@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="maincolor">#202F46</color>
+    <color name="codeGary">#9e9e9e</color>
+    <color name="black">#ff000000</color>
+    <color name="bg_White">#FFFFFF</color>
+    <color name="button_normal">#ff80bd01</color>
+    <color name="button_pressed">#ff48bd06</color>
+    <color name="button_ripple">#99ffffff</color>
+    <color name="color_accent">#ff80bd01</color>
+    <color name="selectable_item_background_general_normal_light">@android:color/white</color>
+</resources>

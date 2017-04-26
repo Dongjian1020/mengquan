@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/landscape_slideplay_title_bg"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pointleft" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="个人设置"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rect_follow"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                ripple:rv_type="rectangle"
+                android:background="@drawable/selector_row"
+                ripple:rv_zoom="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/photo"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/change_avatar_hint1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/arrow1"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="编辑头像" />
+                <View
+                    android:id="@+id/arrow1"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_right_arrow">
+
+                </View>
+
+            </com.andexert.library.RippleView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/_d1d1d1">
+
+            </View>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rect_collection"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                ripple:rv_type="rectangle"
+                android:background="@drawable/selector_row"
+                ripple:rv_zoom="true">
+
+                <TextView
+                    android:id="@+id/rect_child2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:text="昵称"
+                    />
+                <View
+                    android:id="@+id/arrow2"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_right_arrow">
+
+                </View>
+
+            </com.andexert.library.RippleView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/_d1d1d1">
+
+            </View>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rect_publish"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                ripple:rv_type="rectangle"
+                android:background="@drawable/selector_row"
+                ripple:rv_zoom="true">
+
+                <TextView
+                    android:id="@+id/rect_child3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:text="性别"
+                    />
+                <View
+                    android:id="@+id/arrow3"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_right_arrow">
+
+                </View>
+
+            </com.andexert.library.RippleView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/_d1d1d1">
+
+            </View>
+            <com.andexert.library.RippleView
+                android:id="@+id/rect_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                ripple:rv_type="rectangle"
+                android:background="@drawable/selector_row"
+                ripple:rv_zoom="true">
+
+                <TextView
+                    android:id="@+id/rect_child4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:text="所在地"
+                    />
+                <View
+                    android:id="@+id/arrow4"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_right_arrow">
+
+                </View>
+
+            </com.andexert.library.RippleView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/_d1d1d1">
+
+            </View>
+            <com.andexert.library.RippleView
+                android:id="@+id/rect_settings"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                ripple:rv_type="rectangle"
+                android:background="@drawable/selector_row"
+                ripple:rv_zoom="true">
+
+                <TextView
+                    android:id="@+id/rect_child5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:text="生日"
+                    />
+                <View
+                    android:id="@+id/arrow5"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_right_arrow">
+
+                </View>
+
+            </com.andexert.library.RippleView>
+
+            <com.jiangdongjian.mengquan.component.PaperButton
+                android:id="@+id/next"
+                widget:paper_corner_radius="19dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                widget:paper_text="修改密码"
+                widget:paper_color="@color/maincolor"
+                widget:paper_text_color="@color/white"
+                />
+            <com.jiangdongjian.mengquan.component.PaperButton
+                android:id="@+id/next1"
+                widget:paper_corner_radius="19dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                widget:paper_text="退出账号"
+                widget:paper_color="@color/maincolor"
+                widget:paper_text_color="@color/white"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
